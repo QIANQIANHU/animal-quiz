@@ -6,28 +6,35 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>vote</title>
+    <title>Animal Quiz</title>
   </head>
 
     <body>
       <div class="container">
-        <div id="minors">
-          <p>
-            We are so sorry but you are too young to vote. We can offer you links to <a href="https://www.usa.gov/election">websites</a>  where you may learn about the voting process and age requirements.
-          </p>
-        </div>
-        <div id="adults">
-          <p>
-            This is a list when upcoming elections will take place:
-            <ul>
-              <li><a href="https://www.usa.gov/midterm-state-and-local-elections">first</a></li>
-              <li><a href="https://www.nytimes.com/interactive/2017/us/elections/election-calendar.html">second</a></li>
-              <li><a href="https://en.wikipedia.org/wiki/United_States_elections,_2018">third</a></li>
-              <li><a href="https://www.usvotefoundation.org/vote/state-elections/state-election-dates-deadlines.htm">forth</a></li>
-            </ul>
-          </p>
-        </div>
+        <form id="person">
+          <div class="form-group has-success">
+            <label class="form-control-label" for="inputSuccess1">How old are you?</label>
+            <input type="text" class="form-control form-control-success" id="age">
+          </div>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="inputSuccess1">How tall are you (in metric system)?</label>
+            <input type="text" class="form-control form-control-success" id="height">
+          </div>
+          <div class="form-group has-success">
+            <label class="form-control-label" for="inputSuccess1">Give me your weight (in kilograms)</label>
+            <input type="text" class="form-control form-control-success" id="weight">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
 
+          <div id="dog">
+            <h1>Congratulations! You will be a dog in a future life!</h1>
+            <img src="img/dog.jpeg" alt="dog picture">
+          </div>
+          <div id="cat">
+            <h1>Congratulations! You will be a cat in a future life!</h1>
+            <img src="img/cat.jpeg" alt="cat image">
+          </div>
 
       </div>
     </body>
